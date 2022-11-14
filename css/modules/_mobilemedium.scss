@@ -1,0 +1,22 @@
+
+// MOBILE MEDIUM QUERY--------------------------------------------------------------------------
+@media only screen and (min-width: 375px) {
+  .hero-section {
+    width: 375px;
+  }
+  .bg-light {
+    width: 380px;
+  }
+  .bg-light .navbar-nav {
+    margin-left: 30px;
+  }
+  .video-container {
+    height: 290px;
+    width: 380px !important;
+    position: relative;
+    padding-top: 330px;
+}
+#bookingconfirmed-modal, #bookingdenied-modal {
+    margin-left: 45px;
+}
+}

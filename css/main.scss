@@ -1,0 +1,844 @@
+@mixin header-style {
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 1);
+  font-weight: 600;
+}
+@mixin bootstrapicons {
+  color: $greencolour;
+  font-size: 20px;
+  margin-top: 11px;
+}
+@mixin bootstrapiconstablet {
+  color: $greencolour;
+  font-size: 30px;
+  margin-top: 23px;
+}
+@mixin bootstrapiconslaptop {
+  color: $greencolour;
+  font-size: 45px;
+  margin-top: 32px;
+}
+$blackcolour: #111111;
+$greencolour: #409C21;
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  background: $blackcolour;
+}
+// turns off horizontal scrolling
+
+html {
+  // max-width: 100%;
+  overflow-x: hidden;
+}
+
+// video
+.video-container {
+  height: 290px;
+  width: 320px!important;
+  overflow: hidden;
+  position: relative;
+  padding-top: 330px;
+}
+
+video {
+  width: 100%;
+  height: 326px;
+}
+
+.video-container video {
+  position: absolute;
+    top: 138%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    margin-top: -293px;
+    z-index: 99;
+    width: 530px !important;
+}
+// video ends
+
+// NAV BAR SECTION
+
+.bg-light {
+  background-color: rgba(56, 83, 115, 0.2)!important;
+  height: 50px;
+  margin-bottom: 10px;
+
+  .logoimage {
+    width: 58px;
+    height: 47px;
+    margin-top: -11px;
+  }
+
+  .navbar-toggler {
+    margin-top: -14px;
+    border: 1px solid rgba(170, 189, 204, 0.1);
+    margin-right: -7px;
+  }
+
+  .navbar-nav {
+    width: 300px;
+    height: 235px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    text-align: center;
+    padding-top: 1px;
+    margin-bottom: 5px;
+    background: #AABDCC;
+    padding-top: 15px;
+    margin-top: -5px;
+    border: 2px solid black;
+  }
+
+  .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+  }
+}
+
+#laptopnav-links {
+  width: 0;
+  height: 0;
+}
+
+.nav-link-laptop {
+  opacity: 0;
+}
+// NAV BAR SECTION ENDS
+// HERO SECTION
+
+.hero-section {
+  width: 100%;
+  height: 290px;
+  background: transparent;
+  position: absolute;
+  z-index: 100;
+
+  .toursim-title {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 2px black;
+    font-weight: 600;
+    margin-bottom: -2px;
+    margin-top: 30px;
+    margin-left: -4px;
+  }
+
+  .newzealand-title {
+    font-size: 25px;
+    @include header-style;
+    margin-bottom: 2px;
+  }
+
+  .sub-title {
+    font-size: 13px;
+    color: white;
+    text-align: center;
+    margin-bottom: 90px;
+  }
+
+  .downarrow-box {
+    font-size: 20px;
+    color: white;
+    width: 22px;
+    height: 30px;
+    margin: 0 auto -5px;
+  }
+
+  .scrolldown-text {
+    font-size: 8px;
+    color: white;
+    text-align: center;
+  }
+}
+// HERO SECTION ENDS
+// BLACK BACKGROUND CONTAINER
+
+.black-background-content-container {
+  background: $blackcolour;
+  width: 100%;
+  height: 520px;
+}
+
+.contentsection-title {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 50px;
+}
+
+.behindboxforboxshadow {
+  width: 290px;
+  height: 320px;
+  margin: 0 auto;
+  border-radius: 20px;
+  background: black;
+  box-shadow: 0 1px 6px 5px rgba(64,156,33,0.7);
+  -webkit-box-shadow: 0 1px 6px 5px rgba(64,156,33,0.7);
+  -moz-box-shadow: 0 1px 6px 5px rgba(64,156,33,0.7);
+}
+// SWIPER
+
+.swiper {
+  width: 290px;
+  height: 320px;
+
+  .swiperslide-titles {
+    font-size: 23px;
+    text-align: left;
+    color: white;
+    font-weight: 600;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  // TITLE FOR SWIPER SLIDES
+  .title-container {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  // SUBTITLE FOR SWIPER SLIDES
+  .subtitle-container-slides {
+    text-align: left;
+    color: white;
+    font-size: 16px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+  }
+  // BOX THAN CONTAINS FORM SWIPER SLIDES
+  .white-rounded-box {
+    width: 275px;
+    height: 130px;
+    border: 2px solid white;
+    border-radius: 15px;
+    margin: 31px auto 0;
+  }
+
+  .warning {
+    color: white;
+    font-size: 11px;
+    margin-left: 10px;
+    background: tomato;
+    margin-top: -2px;
+    position: absolute;
+    width: 250px;
+    text-align: center;
+  }
+
+  .days-selected {
+    color: white;
+    font-size: 11px;
+    margin-left: 10px;
+    background: $greencolour;
+    margin-top: -2px;
+    position: absolute;
+    width: 250px;
+    text-align: center;
+  }
+
+  .bi-check2 {
+    font-size: 11px;
+    color: white;
+  }
+  // FORM LABELS
+  label {
+    display: inline-block;
+    font-size: 15px;
+    color: white;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  // DROP DOWN BOXES
+  select {
+    word-wrap: normal;
+    margin-left: 10px;
+    width: 250px;
+    height: 25px;
+    background: black;
+    border: 1.5px solid white;
+    color: white;
+    font-size: 12px;
+  }
+}
+// DATE RANGE TITLE
+
+.daterange-title {
+  display: inline-block;
+  font-size: 15px;
+  color: white;
+  margin-left: 10px;
+  margin-top: 22px;
+  margin-bottom: -10px;
+}
+// DATE RANGE INPUT BOX
+
+.dateinfocontainer {
+  width: 100%;
+  height: 55px;
+}
+
+input {
+  word-wrap: normal;
+  margin-left: 10px;
+  width: 250px;
+  height: 25px;
+  background: black;
+  border: 1.5px solid white;
+  color: white;
+  font-size: 14px;
+  margin-top: 10px;
+}
+// GO BUTTON
+
+#go-button {
+  width: 61px;
+  height: 25px;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  border: 1.5px solid white;
+  border-radius: 5px;
+  background: $greencolour;
+  margin-left: 215px;
+  margin-top: 23px;
+}
+// FORM SECTION MARGIN BOTTOM TO ALIGN GO BUTTON
+
+.form-section {
+  margin-bottom: -9px;
+}
+// SLIDE ONE
+
+.swiper-slide {
+  background-image: url("../img/oceanbackground.png");
+  height: 320px;
+  background-size: cover;
+  margin: 0 auto;
+  border-radius: 20px;
+  border: 1px solid #409C21;
+}
+
+.slideone-title {
+  font-size: 23px;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  padding-top: 20px;
+  text-shadow: 0 0 5px #424242;
+  margin-bottom: 5px;
+}
+
+.nzmap-image {
+  width: 142px;
+  height: 178px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.getstarted-button {
+  width: 153px;
+  height: 34px;
+  border-radius: 5px;
+  border: 1.5px solid white;
+  background: #409C21;
+  margin: 0 auto;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 5px 16px;
+}
+// SLIDE TWO
+
+.slide-two {
+  background: black;
+}
+
+.bi-calendar4-week {
+  @include bootstrapicons;
+}
+// DATE RANGE PICKER CSS
+
+.daterangepicker {
+  border: 2px solid $greencolour;
+}
+
+.daterangepicker td.active {
+  background-color: green;
+  border-color: transparent;
+  color: #fff;
+}
+
+.daterangepicker .drp-buttons .btn {
+  margin-left: 8px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 8px;
+  background: green;
+  border: 1px solid black;
+  margin-bottom: 2px;
+  color: white;
+}
+
+.popupmessage {
+  background: green;
+  width: 250px;
+  margin-left: 10px;
+  margin-top: 10px;
+  border: 2px solid white;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  height: 25px;
+  padding-top: 2px;
+}
+// SLIDE THREE
+
+.slide-three {
+  background: black;
+}
+
+.bi-people {
+  @include bootstrapicons;
+}
+
+#slide3-whitebox {
+  width: 275px;
+  height: 170px;
+  border: 2px solid white;
+  border-radius: 15px;
+  margin: 9px auto 0;
+  padding-top: 12px;
+}
+// FIND BUTTON
+
+#find-button {
+  width: 61px;
+  height: 25px;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  border: 1.5px solid white;
+  border-radius: 5px;
+  background: $greencolour;
+  margin-left: 215px;
+  margin-top: 8px;
+}
+// SLIDE FOUR
+
+.slide-four {
+  background: black;
+}
+
+.bi-geo-alt-fill {
+  @include bootstrapicons;
+}
+// MAP BOX---------------------------------------------------------
+.button {
+    color: #fff;
+    background-color: #555;
+    padding: 5px;
+    margin-top: 1.5em;
+    position: absolute;
+    right: 3.5em;
+    top: 1em;
+    border-radius: 0.5em;
+    border-bottom: 2px #222 solid;
+    cursor: pointer;
+    width: 68px;
+}
+
+#map {
+  position: absolute;
+  top: -218px;
+  left: 10px;
+  border-radius: 20px;
+  border: 3px solid $greencolour;
+}
+
+#map-container {
+  position: relative;
+}
+
+.marker {
+  background-image: url("../img/greenmarker.png");
+  width: 51px;
+  height: 45px;
+  background-size: cover;
+}
+
+a.mapboxgl-ctrl-logo {
+  display: none;
+}
+
+.mapboxgl-popup-content {
+  width: 120px;
+  height: 192px;
+  border-radius: 5px;
+  background: black;
+  border: 3px solid black;
+}
+
+.mapboxgl-popup-close-button {
+  color: black;
+  font-size: 27px;
+  margin-top: -5px;
+  margin-right: 2px;
+}
+
+h1 {
+  font-size: 13px;
+  color: green;
+  font-weight: 600;
+  margin-left: 110px;
+  margin-top: -105px;
+}
+
+.locationpopupdescription {
+  color: black;
+  font-size: 11px;
+  width: 113px;
+  height: 35px;
+  margin-left: -9px;
+  text-align: center;
+  margin-top: -11px;
+  margin-bottom: 31px;
+}
+
+.locationpopuptitle {
+  height: 20px;
+  text-align: center;
+  margin-top: -4px;
+  margin-left: -9px;
+  width: 113px;
+}
+
+.accomprice {
+  color: black;
+  font-size: 16px;
+  background: white;
+  width: 108px;
+  border-radius: 5px;
+  height: 27px;
+  margin-top: -31px;
+  margin-left: -6px;
+  background: green;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.bookbutton {
+  color: green;
+  font-size: 14px;
+  background: black;
+  width: 58px;
+  padding: 2px 7px;
+  border: 2px solid green;
+  border-radius: 5px;
+  height: 27px;
+  margin-top: -12px;
+  margin-left: 20px;
+  font-weight: 600;
+}
+
+.popupimage {
+  border-radius: 10px;
+  width: 108px;
+  height: 58px;
+  margin-left: -7px;
+  border: 2px solid white;
+  margin-top: -6px;
+}
+// BUTTONS SLIDE FOUR
+
+.buttoncontainer-slide4 {
+  width: 100%;
+  height: 30px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 236px;
+}
+
+#back-button {
+  visibility: hidden;
+}
+
+#search-results {
+  color: white;
+  font-size: 10px;
+  margin-left: -29px;
+  margin-top: -232px;
+  border-radius: 10px;
+  padding: 2px 8px;
+  border: 2px solid white;
+  width: 264px;
+  text-align: center;
+  font-weight: 600;
+  height: 40px;
+}
+// SLIDE FIVE
+
+.slide-five {
+  background: black;
+}
+
+.bi-basket2-fill {
+  @include bootstrapicons;
+}
+
+#selected-accommodation-title {
+  color: white;
+  margin-left: 8px;
+  margin-bottom: -15px;
+  margin-top: -3px;
+  border: 2px solid white;
+  border-radius: 7px;
+  width: 274px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.whiteoutlinebox {
+  width: 275px;
+  height: 200px;
+  border: 2px solid white;
+  border-radius: 15px;
+  margin: 20px auto -8px;
+}
+
+.foodoptiontitle {
+  font-size: 15px;
+  color: white;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+
+.foodoptionbox {
+  margin-left: 10px;
+  width: 250px;
+  height: 25px;
+  background: black;
+  border: 1.5px solid white;
+  color: white;
+  font-size: 12px;
+  padding-left: 5px;
+  padding-top: 2px;
+}
+
+#back-button-two {
+  width: 61px;
+  height: 25px;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  border: 1.5px solid white;
+  border-radius: 5px;
+  background: $greencolour;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+//SWIPER ENDS
+
+#book-button {
+  width: 61px;
+  height: 25px;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  border: 1.5px solid white;
+  border-radius: 5px;
+  background: $greencolour;
+  margin-left: 218px;
+  margin-top: -25px;
+}
+// MODAL
+
+#bookingconfirmed-modal {
+  margin-top: -403px;
+  background-image: url("../img/kiwifruitbackground.jpeg");
+  width: 290px;
+  height: 320px;
+  position: absolute;
+  z-index: 99;
+  margin-left: 15px;
+  border-radius: 20px;
+  box-shadow: 0 1px 6px 5px rgba(64,156,33,0.7);
+  -webkit-box-shadow: 0 1px 6px 5px rgba(64,156,33,0.7);
+  -moz-box-shadow: 0 1px 6px 5px rgba(64,156,33,0.7);
+  background-size: cover;
+  // opacity: 90;
+  opacity: 0;
+  // visibility: visible;
+  visibility: hidden;
+}
+
+#bookingconfirmed-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.bi-x-circle {
+  font-size: 25px;
+  color: #409C21;
+  top: 3px;
+  right: 10px;
+  position: absolute;
+}
+
+.modal-title {
+  font-size: 23px;
+  color: black;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: -20px;
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 1);
+}
+
+.bi-check-square {
+  font-size: 100px;
+  color: black;
+  margin-left: 95px;
+}
+
+.lightgreen-rectangle {
+  width: 210px;
+  height: 90px;
+  margin: 0 auto;
+  background: rgba(217, 235, 124, 0.9);
+  border-radius: 5px;
+  border: 1px solid black;
+  margin-top: -15px;
+}
+
+#bookingconfirmedtext {
+  font-size: 15px;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  width: 207px;
+  height: 87px;
+}
+
+#holiday-total-dates {
+  width: 210px;
+  height: 19px;
+  background: #409C21;
+  border-radius: 4px;
+  border: 1px solid black;
+  margin: 8px auto 0;
+  text-align: center;
+  font-size: 10px;
+}
+
+// MODAL BOOKING DENIED
+#bookingdenied-modal {
+  margin-top: -403px;
+  background-image: url("../img/bookingdenied.png");
+  width: 290px;
+  height: 320px;
+  position: absolute;
+  z-index: 99;
+  margin-left: 15px;
+  border-radius: 20px;
+  box-shadow: 0 1px 6px 5px rgba(64,156,33,0.7);
+  -webkit-box-shadow: 0 1px 6px 5px rgba(64,156,33,0.7);
+  -moz-box-shadow: 0 1px 6px 5px rgba(64,156,33,0.7);
+  background-size: cover;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#bookingdenied-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.bi-x-circle {
+  font-size: 25px;
+  color: #409C21;
+  top: 3px;
+  right: 10px;
+  position: absolute;
+}
+
+.bi-x-circle:hover {
+  cursor: pointer;
+  color: green;
+}
+
+.bookingdeniedmodal-title {
+  font-size: 23px;
+  color: black;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: -20px;
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 1);
+}
+
+.bi-exclamation-square {
+  font-size: 100px;
+  color: black;
+  margin-left: 95px;
+}
+
+.lightred-rectangle {
+  width: 270px;
+  height: 100px;
+  margin-top: -30px;
+  margin: 0 auto;
+  background: rgba(238, 84, 67, 0.9);
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+#bookingdeniedtext {
+  font-size: 12px;
+  padding-left: 0px;
+  width: 270px;
+  height: 100px;
+  padding-top: 12px;
+  color: black;
+  text-align: center;
+}
+
+// FOOTER SECTION
+
+#footer-container {
+  width: 100%;
+  height: 40px;
+  background-color: white;
+  border: 1px solid $blackcolour;
+  margin-top: 10px;
+
+  .footer-text {
+    color: $blackcolour;
+    text-align: center;
+    padding-top: 6px;
+  }
+}
+// FOOTER SECTION ENDS
+
+@import 'modules/mobilemedium';
+@import 'modules/mobilelarge';
+@import 'modules/tablet';
+@import 'modules/laptop';
+@import 'modules/largelaptop';

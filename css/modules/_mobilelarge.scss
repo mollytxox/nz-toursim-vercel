@@ -1,0 +1,22 @@
+
+// MOBILE LARGE QUERY--------------------------------------------------------------------------
+@media only screen and (min-width: 425px) {
+  .hero-section {
+    width: 425px;
+  }
+  .bg-light {
+    width: 425px!important;
+  }
+  .bg-light .navbar-nav {
+    margin-left: 50px;
+  }
+  .video-container {
+    height: 290px;
+    width: 425px !important;
+    position: relative;
+    padding-top: 330px;
+}
+#bookingconfirmed-modal, #bookingdenied-modal {
+    margin-left: 70px;
+}
+}

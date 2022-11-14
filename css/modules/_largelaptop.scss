@@ -1,0 +1,629 @@
+
+//  LAPTOP LARGE QUERY------------------------------------------------------------------------------------------------
+@media only screen and (min-width: 1440px) {
+  // video
+  .video-container {
+    height: 800px;
+    width: 1444px!important;
+    overflow: hidden;
+    position: relative;
+    padding-top: 500px;
+  }
+
+  video {
+    width: 100%;
+    height: 950px;
+  }
+
+  .video-container video {
+    position: absolute;
+    top: 131%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    margin-top: -650px;
+    z-index: 99;
+    width: 1480px!important;
+  }
+  // video ends
+
+  // NAV BAR SECTION
+  .bg-light {
+    height: 95px;
+    width: 1440px;
+
+    .logoimage {
+      width: 110px;
+      height: 83px;
+      margin-top: 0;
+    }
+
+    .navbar-toggler {
+      margin-top: -14px;
+      border: 1px solid rgba(170, 189, 204, 0.1);
+      margin-right: -7px;
+    }
+
+    .navbar-toggler-icon {
+      width: 2.5em;
+      height: 1.5em;
+    }
+
+    .navbar-nav {
+      display: none;
+    }
+
+    .navbar-nav .nav-link {
+      padding-right: 0;
+      padding-left: 0;
+      color: white;
+      font-weight: bold;
+      font-size: 35px;
+    }
+  }
+
+  #laptopnav-links {
+    position: absolute;
+    width: 640px;
+    height: 58px;
+    top: 19px;
+    right: 0;
+    visibility: visible;
+    z-index: 100;
+    padding-top: 5px;
+  }
+
+  .nav-link-laptop {
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    opacity: 100%;
+    margin-left: 75px;
+  }
+  // NAV BAR SECTION ENDS
+  // HERO SECTION
+  .hero-section {
+    width: 1440px;
+    height: 800px;
+    background: transparent;
+    position: absolute;
+    z-index: 100;
+  }
+
+  .toursim-title {
+    font-size: 120px!important;
+    text-shadow: 0 2px 2px black!important;
+    margin-top: 50px!important;
+  }
+
+  .newzealand-title {
+    font-size: 55px!important;
+    text-shadow: 0 2px 2px black!important;
+    margin-bottom: 15px!important;
+  }
+
+  .sub-title {
+    font-size: 30px!important;
+    margin-bottom: 280px!important;
+  }
+
+  .downarrow-box {
+    font-size: 25px!important;
+    margin-bottom: 8px!important;
+  }
+
+  .scrolldown-text {
+    font-size: 15px!important;
+    margin-top: 8px!important;
+  }
+
+  .bi-arrow-down {
+    font-size: 40px!important;
+    margin-left: 0px;
+  }
+
+  .downarrow-box {
+    margin-bottom: 30px!important;
+    margin-left: 703px!important;
+  }
+
+  .bi-arrow-down:hover {
+    cursor: pointer;
+    color: green;
+  }
+  // HERO SECTION ENDS
+  // BLACK BACKGROUND CONTAINER
+  .black-background-content-container {
+    height: 945px;
+  }
+
+  .contentsection-title {
+    font-size: 50px;
+    padding-top: 45px;
+    margin-bottom: 70px;
+  }
+
+  .behindboxforboxshadow {
+    width: 1100px;
+    height: 630px;
+    margin: 0 auto;
+  }
+  // SWIPER
+  .swiper {
+    width: 1100px;
+    height: 630px;
+    margin: 0 auto;
+
+    .slide-five,
+    .slide-four,
+    .slide-three,
+    .slide-two {
+      background: black;
+    }
+
+    .swiperslide-titles {
+      font-size: 65px;
+      margin-left: 65px;
+    }
+    // SLIDE ONE
+    .slide-content {
+      background-image: url("../img/swiperbackgroundlaptop.png");
+      height: 630px;
+      background-repeat: no-repeat;
+      margin: 0 auto;
+      border-radius: 20px;
+      border: 1px solid #409C21;
+    }
+    // SUBTITLE FOR SWIPER SLIDES
+    .subtitle-container-slides {
+      font-size: 35px;
+      margin-left: 68px;
+      margin-top: 76px;
+    }
+    // BOX THAN CONTAINS FORM SWIPER SLIDES
+    .white-rounded-box {
+      width: 960px;
+      height: 310px;
+      border: 2px solid white;
+      border-radius: 15px;
+      margin: 31px auto 0;
+    }
+    // FORM LABELS
+    label {
+      font-size: 35px;
+      margin-left: 55px;
+      margin-top: 5px;
+    }
+    // DROP DOWN BOXES
+    select {
+      margin-left: 55px;
+      width: 830px;
+      height: 45px;
+      font-size: 26px;
+      margin-top: 5px;
+    }
+    // DATE RANGE TITLE
+    .daterange-title {
+      font-size: 35px;
+      color: white;
+      margin-top: 65px;
+      margin-bottom: 5px;
+      margin-left: 55px;
+    }
+
+    input {
+      margin-left: 57px;
+      width: 830px;
+      height: 45px;
+      font-size: 26px;
+    }
+    // GO BUTTON
+    #go-button {
+      width: 85px;
+      height: 55px;
+      font-size: 35px;
+      border: 2.5px solid white;
+      margin-left: 910px;
+      margin-top: -73px;
+    }
+
+    #go-button:hover {
+      background: white;
+      color: green;
+      border: 2.5px solid green;
+      cursor: pointer;
+    }
+  }
+
+  .daterangepicker {
+    border: 4px solid #409C21;
+    width: 560px;
+    height: 295px;
+    padding: 5px;
+  }
+
+  .daterangepicker .drp-buttons .btn {
+    margin-left: 8px;
+    font-size: 16px;
+    margin-top: -5px;
+  }
+
+  .daterangepicker .calendar-table td {
+    line-height: 28px;
+    font-size: 20px;
+  }
+
+  .daterangepicker th.month {
+    width: 255px;
+  }
+
+  .slideone-title {
+    font-size: 65px;
+    padding-top: 32px;
+  }
+
+  .nzmap-image {
+    width: 350px;
+    height: 400px;
+  }
+
+  .getstarted-button {
+    margin-left: 840px;
+    margin-top: -70px;
+    font-size: 25px;
+    width: 234px;
+    height: 45px;
+  }
+
+  .getstarted-button:hover {
+    cursor: pointer;
+    background: white;
+    color: green;
+    border-radius: 1px solid green;
+  }
+  // SLIDE TWO
+  .bi-calendar4-week {
+    @include bootstrapiconslaptop;
+  }
+
+  .popupmessage {
+    width: 830px;
+    margin-left: 57px;
+    margin-top: 3px;
+    font-size: 25px;
+    height: 42px;
+    padding-top: 1px;
+  }
+
+  .bi-people {
+    @include bootstrapiconslaptop;
+  }
+
+  #slide3-whitebox {
+    width: 960px;
+    height: 335px;
+    padding-top: 24px;
+    margin-top: 15px;
+  }
+  // // FIND BUTTON
+  #find-button {
+    width: 105px;
+    height: 55px;
+    font-size: 35px;
+    border: 2.5px solid white;
+    margin-left: 900px;
+    margin-top: -75px;
+  }
+
+  #find-button:hover {
+    background: white;
+    color: green;
+    border: 2.5px solid green;
+    cursor: pointer;
+  }
+
+  .bi-geo-alt-fill {
+    @include bootstrapiconslaptop;
+  }
+  // // MAP BOX---------------------------------------------------------
+  .button {
+    color: #fff!important;
+    background-color: #555!important;
+    padding: 1em!important;
+    margin-top: 3em!important;
+    position: absolute!important;
+    right: 2em!important;
+    top: 1em!important;
+    border-radius: 0.5em!important;
+    border-bottom: 2px #222 solid!important;
+    cursor: pointer!important;
+    width: 90px!important;
+    height: 53px!important;
+  }
+
+  .mapboxgl-map {
+    width: 1050px !important;
+    height: 400px !important;
+    margin-left: 14px;
+    margin-top: 110px;
+  }
+
+  .marker {
+    width: 88px;
+    height: 75px;
+  }
+
+  a.mapboxgl-ctrl-logo {
+    display: none;
+  }
+
+  .mapboxgl-popup-content {
+    width: 145px;
+    height: 230px;
+  }
+
+  .mapboxgl-popup-close-button {
+    color: black;
+    font-size: 34px;
+    margin-top: -5px;
+    margin-right: 2px;
+  }
+
+  h1 {
+    font-size: 17px;
+  }
+
+  .locationpopupdescription {
+    font-size: 16px;
+    width: 128px;
+    height: 35px;
+    margin-left: -4px;
+    margin-top: -11px;
+    margin-bottom: 31px;
+  }
+
+  .locationpopuptitle {
+    height: 39px;
+    margin-top: -4px;
+    margin-left: -5px;
+    width: 130px;
+  }
+
+  .accomprice {
+    font-size: 18px;
+    width: 60px;
+    height: 27px;
+    margin-top: -12px;
+    margin-left: -4px;
+  }
+
+  .bookbutton {
+    color: green;
+    font-size: 18px;
+    width: 65px;
+    padding: 1px 5px;
+    height: 27px;
+    margin-top: -43px;
+    margin-left: 59px;
+  }
+
+  .bookbutton:hover {
+    cursor: pointer;
+    background-color: white;
+  }
+
+  .popupimage {
+    width: 133px;
+    height: 70px;
+    margin-top: 2px;
+  }
+
+  #search-results {
+    color: white;
+    font-size: 18px;
+    margin-left: 227px;
+    margin-top: -160px;
+    width: 580px;
+    height: 62px;
+  }
+
+  .bi-basket2-fill {
+    @include bootstrapiconslaptop;
+  }
+
+  #selected-accommodation-title {
+    margin: 80px auto 0;
+    width: 520px;
+    font-size: 23px;
+    height: 40px;
+  }
+
+  .whiteoutlinebox {
+    width: 960px;
+    height: 400px;
+    margin-top: 25px;
+  }
+
+  .foodoptiontitle {
+    font-size: 32px;
+    margin-left: 55px;
+    margin-top: 12px;
+  }
+
+  .foodoptionbox {
+    margin-left: 55px;
+    width: 840px;
+    height: 40px;
+    font-size: 25px;
+    padding-top: 0;
+  }
+
+  #back-button-two {
+    width: 110px;
+    height: 45px;
+    font-size: 30px;
+    border: 2px solid white;
+    margin-left: 90px;
+    margin-top: -72px;
+  }
+
+  #back-button-two:hover {
+    background: white;
+    color: green;
+    border: 2.5px solid green;
+    cursor: pointer;
+  }
+
+  #book-button {
+    width: 110px;
+    height: 45px;
+    font-size: 30px;
+    border: 2px solid white;
+    margin-left: 897px;
+    margin-top: -45px;
+  }
+
+  #book-button:hover {
+    background: white;
+    color: green;
+    border: 2.5px solid green;
+    cursor: pointer;
+  }
+  // //SWIPER ENDS
+  // // MODAL BOOKING CONFIRMED
+  #bookingconfirmed-modal {
+    margin-top: -730px;
+    background-image: url("../img/kiwifruitbackground.jpeg");
+    width: 1240px;
+    height: 670px;
+    margin-left: 114px;
+  }
+
+  #bookingconfirmed-modal.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .bi-x-circle {
+    font-size: 60px;
+    right: 25px;
+    color: black;
+  }
+
+  .bi-x-circle:hover {
+    cursor: pointer;
+    color: green;
+  }
+
+  .modal-title {
+    font-size: 60px;
+    margin-top: 35px;
+    margin-bottom: -30px;
+  }
+
+  .bi-check-square {
+    font-size: 190px;
+    margin-left: 535px;
+  }
+
+  .lightgreen-rectangle {
+    width: 520px;
+    height: 180px;
+    margin-top: -30px;
+  }
+
+  #bookingconfirmedtext {
+    font-size: 34px;
+    padding-left: 10px;
+    width: 520px;
+    height: 177px;
+    padding-top: 12px;
+  }
+
+  #holiday-total-dates {
+    width: 520px;
+    height: 50px;
+    margin: 25px auto 0;
+    font-size: 26px;
+    padding-top: 5px;
+  }
+
+  // MODAL BOOKING DENIED
+  #bookingdenied-modal {
+    margin-top: -730px;
+    background-image: url("../img/bookingdenied.png");
+    width: 1240px;
+    height: 670px;
+    margin-left: 114px;
+    position: absolute;
+    z-index: 99;
+    border-radius: 20px;
+    box-shadow: 0 1px 6px 5px rgba(64,156,33,0.7);
+    -webkit-box-shadow: 0 1px 6px 5px rgba(64,156,33,0.7);
+    -moz-box-shadow: 0 1px 6px 5px rgba(64,156,33,0.7);
+    background-size: cover;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  #bookingdenied-modal.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .bi-x-circle {
+    font-size: 60px;
+    right: 25px;
+    color: black;
+  }
+
+  .bi-x-circle:hover {
+    cursor: pointer;
+    color: green;
+  }
+
+  .bookingdeniedmodal-title {
+    font-size: 60px;
+    margin-top: 35px;
+    margin-bottom: -30px;
+    color: black;
+    text-align: center;
+    font-weight: 600;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 1);
+  }
+
+  .bi-exclamation-square {
+    font-size: 190px;
+    margin-left: 535px;
+  }
+
+  .lightred-rectangle {
+    width: 800px;
+    height: 230px;
+    margin-top: -30px;
+    margin: 0 auto;
+    background: rgba(238, 84, 67, 0.9);
+    border-radius: 5px;
+    border: 1px solid black;
+  }
+
+  #bookingdeniedtext {
+    font-size: 34px;
+    padding-left: 10px;
+    width: 800px;
+    height: 230px;
+    padding-top: 12px;
+    color: black;
+    text-align: center;
+  }
+
+  // FOOTER SECTION
+  #footer-container {
+    height: 70px;
+  }
+
+  .footer-text {
+    font-size: 42px;
+    padding-top: 13px;
+  }
+  // FOOTER SECTION ENDS
+}

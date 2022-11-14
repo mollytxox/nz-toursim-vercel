@@ -1,0 +1,524 @@
+
+@media only screen and (min-width: 768px) {
+
+  // video
+  .video-container {
+    height: 450px;
+    width: 768px!important;
+    overflow: hidden;
+    position: relative;
+    padding-top: 500px;
+  }
+
+  video {
+    width: 100%;
+    height: 500px;
+  }
+
+  .video-container video {
+    position: absolute;
+    top: 131%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    margin-top: -430px;
+    z-index: 99;
+    width: 768px!important;
+  }
+  // video ends
+
+  // NAV BAR SECTION
+  .bg-light {
+    background-color: rgba(56, 83, 115, 0.2)!important;
+    height: 85px;
+    margin-bottom: 10px;
+    width: 768px!important;
+
+    .logoimage {
+      width: 85px;
+      height: 70px;
+      margin-top: -6px;
+      margin-left: 10px;
+    }
+
+    .navbar-toggler {
+      margin-top: -14px;
+      border: 1px solid rgba(170, 189, 204, 0.1);
+      margin-right: -7px;
+    }
+
+    .navbar-toggler-icon {
+      width: 2.5em;
+      height: 1.5em;
+    }
+
+    .navbar-nav {
+      width: 760px;
+      height: 235px;
+      text-transform: uppercase;
+      border-radius: 8px;
+      text-align: center;
+      padding-top: 1px;
+      margin-bottom: 5px;
+      background: #AABDCC;
+      padding-top: 15px;
+      margin-top: 4px;
+      border: 2px solid black;
+      margin-left: -8px;
+    }
+
+    .navbar-nav .nav-link {
+      padding-right: 0;
+      padding-left: 0;
+      color: white;
+      font-weight: bold;
+      font-size: 35px;
+    }
+  }
+
+  #laptopnav-links {
+    width: 0;
+    height: 0;
+  }
+
+  .nav-link-laptop {
+    opacity: 0;
+  }
+  // NAV BAR SECTION ENDS
+  // HERO SECTION
+  .hero-section {
+    width: 100%;
+    height: 450px;
+    background: transparent;
+    position: absolute;
+    z-index: 100;
+  }
+
+    .toursim-title {
+      font-size: 70px!important;
+    }
+
+    .newzealand-title {
+      font-size: 35px!important;
+    }
+
+    .sub-title {
+      font-size: 18px!important;
+      margin-bottom: 130px!important;
+    }
+
+    .downarrow-box {
+      font-size: 25px!important;
+      margin-bottom: 8px!important;
+    }
+
+    .scrolldown-text {
+      font-size: 10px!important;
+      margin-top: 8px!important;
+    }
+
+  // HERO SECTION ENDS
+  // BLACK BACKGROUND CONTAINER
+  .black-background-content-container {
+    height: 800px;
+  }
+
+  .contentsection-title {
+    font-size: 30px;
+    padding-top: 45px;
+    margin-bottom: 50px;
+  }
+
+  .behindboxforboxshadow {
+    width: 480px;
+    height: 560px;
+  }
+  // SWIPER
+  .swiper {
+    width: 480px;
+    height: 560px;
+
+    .swiperslide-titles {
+      font-size: 35px;
+      margin-left: 25px;
+      margin-top: 20px;
+      margin-right: 15px;
+    }
+    // SUBTITLE FOR SWIPER SLIDES
+    .subtitle-container-slides {
+      font-size: 22px;
+      margin-left: 27px;
+      margin-top: 45px;
+    }
+    // BOX THAN CONTAINS FORM SWIPER SLIDES
+    .white-rounded-box {
+      width: 400px;
+      height: 330px;
+    }
+    // FORM LABELS
+    label {
+      font-size: 24px;
+      margin-left: 10px;
+      margin-top: 40px;
+    }
+    // DROP DOWN BOXES
+    select {
+      margin-left: 20px;
+      width: 353px;
+      height: 35px;
+      font-size: 18px;
+      margin-top: 5px;
+    }
+  }
+  // DATE RANGE TITLE
+  .daterange-title {
+    font-size: 24px;
+    color: white;
+    margin-left: 22px;
+    margin-top: 40px;
+  }
+
+  input {
+    margin-left: 20px;
+    width: 353px;
+    height: 35px;
+  }
+  // GO BUTTON
+  #go-button {
+    width: 80px;
+    height: 40px;
+    font-size: 25px;
+    border: 2.5px solid white;
+    margin-left: 330px;
+    margin-top: -55px;
+  }
+
+  .slideone-title {
+    font-size: 35px;
+    padding-top: 40px;
+  }
+
+  .nzmap-image {
+    width: 230px;
+    height: 290px;
+  }
+
+  .getstarted-button {
+    width: 195px;
+    height: 37px;
+    font-size: 20px;
+    padding-top: 2px;
+    margin-top: 15px;
+  }
+  // SLIDE TWO
+  .bi-calendar4-week {
+    @include bootstrapiconstablet;
+  }
+
+  .popupmessage {
+    width: 353px;
+    margin-left: 20px;
+    margin-top: 12px;
+    font-size: 17px;
+    height: 33px;
+    padding-top: 2px;
+  }
+
+  .bi-people {
+    @include bootstrapiconstablet;
+  }
+
+  #slide3-whitebox {
+    width: 400px;
+    height: 330px;
+    padding-top: 15px;
+    margin-top: 25px;
+  }
+  // // FIND BUTTON
+  #find-button {
+    width: 80px;
+    height: 40px;
+    font-size: 25px;
+    border: 2.5px solid white;
+    margin-left: 330px;
+    margin-top: -55px;
+  }
+
+  .bi-geo-alt-fill {
+    @include bootstrapiconstablet;
+  }
+  // // MAP BOX---------------------------------------------------------
+  .button {
+    color: #fff;
+    background-color: #555;
+    padding: 4px;
+    margin-top: 5em;
+    position: absolute;
+    right: 23em;
+    top: 1em;
+    border-radius: 0.5em;
+    border-bottom: 2px #222 solid;
+    cursor: pointer;
+    width: 66px;
+    height: 31px;
+}
+
+  .mapboxgl-map {
+    width: 420px !important;
+    height: 400px !important;
+    margin-left: 18px;
+    margin-top: 50px;
+  }
+
+  .marker {
+    width: 88px;
+    height: 75px;
+  }
+
+  a.mapboxgl-ctrl-logo {
+    display: none;
+  }
+
+  .mapboxgl-popup-content {
+    width: 145px;
+    height: 230px;
+  }
+
+  .mapboxgl-popup-close-button {
+    color: black;
+    font-size: 34px;
+    margin-top: -5px;
+    margin-right: 2px;
+  }
+
+  h1 {
+    font-size: 17px;
+  }
+
+  .locationpopupdescription {
+    font-size: 16px;
+    width: 128px;
+    height: 35px;
+    margin-left: -4px;
+    margin-top: -11px;
+    margin-bottom: 31px;
+  }
+
+  .locationpopuptitle {
+    height: 39px;
+    margin-top: -4px;
+    margin-left: -5px;
+    width: 130px;
+  }
+
+  .accomprice {
+    font-size: 18px;
+    width: 60px;
+    height: 27px;
+    margin-top: -12px;
+    margin-left: -4px;
+  }
+
+  .bookbutton {
+    color: green;
+    font-size: 18px;
+    width: 65px;
+    padding: 1px 5px;
+    height: 27px;
+    margin-top: -43px;
+    margin-left: 59px;
+  }
+
+  .popupimage {
+    width: 133px;
+    height: 70px;
+    margin-top: 2px;
+  }
+
+  #search-results {
+    color: white;
+    font-size: 15px;
+    margin-left: -14px;
+    margin-top: -204px;
+    width: 420px;
+    height: 56px;
+  }
+
+  .bi-basket2-fill {
+    @include bootstrapiconstablet;
+  }
+
+  #selected-accommodation-title {
+    margin: 50px auto 0;
+    width: 355px;
+    font-size: 18px;
+  }
+
+  .whiteoutlinebox {
+    width: 400px;
+    height: 365px;
+    margin: 30px auto -8px;
+  }
+
+  .foodoptiontitle {
+    font-size: 24px;
+    margin-left: 24px;
+    margin-top: 28px;
+  }
+
+  .foodoptionbox {
+    margin-left: 20px;
+    width: 353px;
+    height: 35px;
+    font-size: 18px;
+  }
+
+  #back-button-two {
+    width: 65px;
+    height: 29px;
+    font-size: 18px;
+    border: 2px solid white;
+    margin-left: 60px;
+    margin-top: -45px;
+  }
+
+  #book-button {
+    width: 65px;
+    height: 29px;
+    font-size: 18px;
+    border: 2px solid white;
+    margin-left: 350px;
+    margin-top: -29px;
+  }
+  // //SWIPER ENDS
+  // // MODAL
+  #bookingconfirmed-modal {
+    margin-top: -633px;
+    background-image: url("../img/kiwifruitbackground.jpeg");
+    width: 480px;
+    height: 560px;
+    margin-left: 144px;
+  }
+
+  #bookingconfirmed-modal.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .bi-x-circle {
+    font-size: 35px;
+  }
+
+  .modal-title {
+    font-size: 35px;
+    margin-top: 35px;
+    margin-bottom: -5px;
+  }
+
+  .bi-check-square {
+    font-size: 155px;
+    margin-left: 165px;
+  }
+
+  .lightgreen-rectangle {
+    width: 250px;
+    height: 120px;
+  }
+
+  #bookingconfirmedtext {
+    font-size: 20px;
+    padding-left: 10px;
+    width: 247px;
+    height: 117px;
+    padding-top: 12px;
+  }
+
+  #holiday-total-dates {
+    width: 250px;
+    height: 30px;
+    margin: 25px auto 0;
+    font-size: 12px;
+    padding-top: 5px;
+  }
+  // MODAL BOOKING DENIED
+  #bookingdenied-modal {
+    margin-top: -633px;
+    background-image: url("../img/bookingdenied.png");
+    width: 480px;
+    height: 560px;
+    margin-left: 144px;
+    position: absolute;
+    z-index: 99;
+    border-radius: 20px;
+    box-shadow: 0 1px 6px 5px rgba(64,156,33,0.7);
+    -webkit-box-shadow: 0 1px 6px 5px rgba(64,156,33,0.7);
+    -moz-box-shadow: 0 1px 6px 5px rgba(64,156,33,0.7);
+    background-size: cover;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  #bookingdenied-modal.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .bi-x-circle {
+    font-size: 25px;
+    color: black;
+    top: 3px;
+    right: 10px;
+    position: absolute;
+  }
+
+  .bi-x-circle:hover {
+    cursor: pointer;
+    color: green;
+  }
+
+  .bookingdeniedmodal-title {
+    color: black;
+    text-align: center;
+    font-weight: 600;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 1);
+    font-size: 35px;
+    margin-top: 35px;
+    margin-bottom: -5px;
+  }
+
+  .bi-exclamation-square {
+    font-size: 155px;
+    margin-left: 165px;
+    color: black;
+  }
+
+  .lightred-rectangle {
+    width: 390px;
+    height: 185px;
+    margin-top: -30px;
+    margin: 0 auto;
+    background: rgba(238, 84, 67, 0.9);
+    border-radius: 5px;
+    border: 1px solid black;
+  }
+
+  #bookingdeniedtext {
+    font-size: 19px;
+    padding-left: 0px;
+    width: 389px;
+    height: 200px;
+    padding-top: 12px;
+    color: black;
+    text-align: center;
+  }
+
+  // FOOTER SECTION
+  #footer-container {
+    height: 50px;
+  }
+    .footer-text {
+      font-size: 25px;
+      padding-top: 8px;
+    }
+
+  // FOOTER SECTION ENDS
+}
