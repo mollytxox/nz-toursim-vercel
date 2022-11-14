@@ -103,7 +103,9 @@ video {
   font-weight: 600;
   margin-bottom: -2px;
   margin-top: 30px;
-  margin-left: -4px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100vw;
 }
 
 .hero-section .newzealand-title {
@@ -112,7 +114,10 @@ video {
   text-align: center;
   text-shadow: 0 1px 2px black;
   font-weight: 600;
-  margin-bottom: 2px;
+  margin-bottom: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100vw;
 }
 
 .hero-section .sub-title {
@@ -120,6 +125,13 @@ video {
   color: white;
   text-align: center;
   margin-bottom: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100vw;
+}
+
+.hero-section .scroll-down-container {
+  width: 100vw;
 }
 
 .hero-section .downarrow-box {
