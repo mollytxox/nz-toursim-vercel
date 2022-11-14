@@ -14,7 +14,7 @@ html {
 
 .video-container {
   height: 290px;
-  width: 320px !important;
+  width: 100vw !important;
   overflow: hidden;
   position: relative;
   padding-top: 330px;
@@ -39,6 +39,7 @@ video {
   background-color: rgba(56, 83, 115, 0.2) !important;
   height: 50px;
   margin-bottom: 10px;
+  width: 100vw;
 }
 
 .bg-light .logoimage {
@@ -54,17 +55,19 @@ video {
 }
 
 .bg-light .navbar-nav {
-  width: 300px;
-  height: 235px;
-  text-transform: uppercase;
-  border-radius: 8px;
-  text-align: center;
-  padding-top: 1px;
-  margin-bottom: 5px;
+  width: 100%;
+  height: 35%;
   background: #AABDCC;
-  padding-top: 15px;
-  margin-top: -5px;
-  border: 2px solid black;
+  position: fixed;
+  color: black;
+  z-index: 1;
+  top: 50px;
+  left: 0;
+  font-size: -15px;
+  padding-top: 20px;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  text-align: center;
 }
 
 .bg-light .navbar-nav .nav-link {
@@ -798,18 +801,16 @@ h1 {
     width: 375px;
   }
   .bg-light {
-    width: 380px;
-  }
-  .bg-light .navbar-nav {
-    margin-left: 30px;
+    width: 100vw;
   }
   .video-container {
     height: 290px;
-    width: 380px !important;
+    width: 100vw !important;
     position: relative;
     padding-top: 330px;
   }
-  #bookingconfirmed-modal, #bookingdenied-modal {
+  #bookingconfirmed-modal,
+  #bookingdenied-modal {
     margin-left: 45px;
   }
 }
@@ -819,18 +820,16 @@ h1 {
     width: 425px;
   }
   .bg-light {
-    width: 425px !important;
-  }
-  .bg-light .navbar-nav {
-    margin-left: 50px;
+    width: 100vw !important;
   }
   .video-container {
     height: 290px;
-    width: 425px !important;
+    width: 100vw !important;
     position: relative;
     padding-top: 330px;
   }
-  #bookingconfirmed-modal, #bookingdenied-modal {
+  #bookingconfirmed-modal,
+  #bookingdenied-modal {
     margin-left: 70px;
   }
 }
@@ -838,7 +837,7 @@ h1 {
 @media only screen and (min-width: 768px) {
   .video-container {
     height: 450px;
-    width: 768px !important;
+    width: 100vw !important;
     overflow: hidden;
     position: relative;
     padding-top: 500px;
@@ -1285,7 +1284,7 @@ h1 {
 @media only screen and (min-width: 1024px) {
   .video-container {
     height: 800px;
-    width: 1444px !important;
+    width: 100vw !important;
     overflow: hidden;
     position: relative;
     padding-top: 500px;
@@ -1513,7 +1512,7 @@ h1 {
     cursor: pointer;
     background: white;
     color: green;
-    border: 1px solid green;
+    border-radius: 1px solid green;
   }
   .bi-calendar4-week {
     color: #409C21;
@@ -1822,7 +1821,7 @@ h1 {
 @media only screen and (min-width: 1440px) {
   .video-container {
     height: 800px;
-    width: 1444px !important;
+    width: 100vw !important;
     overflow: hidden;
     position: relative;
     padding-top: 500px;
@@ -2050,7 +2049,7 @@ h1 {
     cursor: pointer;
     background: white;
     color: green;
-    border: 1px solid green;
+    border-radius: 1px solid green;
   }
   .bi-calendar4-week {
     color: #409C21;

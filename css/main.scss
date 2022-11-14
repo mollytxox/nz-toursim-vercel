@@ -4,21 +4,25 @@
   text-shadow: 0 1px 2px rgba(0, 0, 0, 1);
   font-weight: 600;
 }
+
 @mixin bootstrapicons {
   color: $greencolour;
   font-size: 20px;
   margin-top: 11px;
 }
+
 @mixin bootstrapiconstablet {
   color: $greencolour;
   font-size: 30px;
   margin-top: 23px;
 }
+
 @mixin bootstrapiconslaptop {
   color: $greencolour;
   font-size: 45px;
   margin-top: 32px;
 }
+
 $blackcolour: #111111;
 $greencolour: #409C21;
 
@@ -31,6 +35,7 @@ $greencolour: #409C21;
 body {
   background: $blackcolour;
 }
+
 // turns off horizontal scrolling
 
 html {
@@ -41,7 +46,7 @@ html {
 // video
 .video-container {
   height: 290px;
-  width: 320px!important;
+  width: 100vw !important;
   overflow: hidden;
   position: relative;
   padding-top: 330px;
@@ -54,21 +59,23 @@ video {
 
 .video-container video {
   position: absolute;
-    top: 138%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    margin-top: -293px;
-    z-index: 99;
-    width: 530px !important;
+  top: 138%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  margin-top: -293px;
+  z-index: 99;
+  width: 530px !important;
 }
+
 // video ends
 
 // NAV BAR SECTION
 
 .bg-light {
-  background-color: rgba(56, 83, 115, 0.2)!important;
+  background-color: rgba(56, 83, 115, 0.2) !important;
   height: 50px;
   margin-bottom: 10px;
+  width: 100vw;
 
   .logoimage {
     width: 58px;
@@ -83,17 +90,19 @@ video {
   }
 
   .navbar-nav {
-    width: 300px;
-    height: 235px;
-    text-transform: uppercase;
-    border-radius: 8px;
-    text-align: center;
-    padding-top: 1px;
-    margin-bottom: 5px;
+    width: 100%;
+    height: 35%;
     background: #AABDCC;
-    padding-top: 15px;
-    margin-top: -5px;
-    border: 2px solid black;
+    position: fixed;
+    color: black;
+    z-index: 1;
+    top: 50px;
+    left: 0;
+    font-size: -15px;
+    padding-top: 20px;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    text-align: center;
   }
 
   .navbar-nav .nav-link {
@@ -113,6 +122,7 @@ video {
 .nav-link-laptop {
   opacity: 0;
 }
+
 // NAV BAR SECTION ENDS
 // HERO SECTION
 
@@ -161,6 +171,7 @@ video {
     text-align: center;
   }
 }
+
 // HERO SECTION ENDS
 // BLACK BACKGROUND CONTAINER
 
@@ -184,10 +195,11 @@ video {
   margin: 0 auto;
   border-radius: 20px;
   background: black;
-  box-shadow: 0 1px 6px 5px rgba(64,156,33,0.7);
-  -webkit-box-shadow: 0 1px 6px 5px rgba(64,156,33,0.7);
-  -moz-box-shadow: 0 1px 6px 5px rgba(64,156,33,0.7);
+  box-shadow: 0 1px 6px 5px rgba(64, 156, 33, 0.7);
+  -webkit-box-shadow: 0 1px 6px 5px rgba(64, 156, 33, 0.7);
+  -moz-box-shadow: 0 1px 6px 5px rgba(64, 156, 33, 0.7);
 }
+
 // SWIPER
 
 .swiper {
@@ -203,6 +215,7 @@ video {
     margin-top: 10px;
     margin-right: 10px;
   }
+
   // TITLE FOR SWIPER SLIDES
   .title-container {
     width: 100%;
@@ -212,6 +225,7 @@ video {
     margin-bottom: 5px;
     margin-top: 5px;
   }
+
   // SUBTITLE FOR SWIPER SLIDES
   .subtitle-container-slides {
     text-align: left;
@@ -220,6 +234,7 @@ video {
     margin-left: 15px;
     margin-bottom: 5px;
   }
+
   // BOX THAN CONTAINS FORM SWIPER SLIDES
   .white-rounded-box {
     width: 275px;
@@ -255,6 +270,7 @@ video {
     font-size: 11px;
     color: white;
   }
+
   // FORM LABELS
   label {
     display: inline-block;
@@ -263,6 +279,7 @@ video {
     margin-left: 10px;
     margin-top: 10px;
   }
+
   // DROP DOWN BOXES
   select {
     word-wrap: normal;
@@ -275,6 +292,7 @@ video {
     font-size: 12px;
   }
 }
+
 // DATE RANGE TITLE
 
 .daterange-title {
@@ -285,6 +303,7 @@ video {
   margin-top: 22px;
   margin-bottom: -10px;
 }
+
 // DATE RANGE INPUT BOX
 
 .dateinfocontainer {
@@ -303,6 +322,7 @@ input {
   font-size: 14px;
   margin-top: 10px;
 }
+
 // GO BUTTON
 
 #go-button {
@@ -317,11 +337,13 @@ input {
   margin-left: 215px;
   margin-top: 23px;
 }
+
 // FORM SECTION MARGIN BOTTOM TO ALIGN GO BUTTON
 
 .form-section {
   margin-bottom: -9px;
 }
+
 // SLIDE ONE
 
 .swiper-slide {
@@ -363,6 +385,7 @@ input {
   font-weight: 600;
   padding: 5px 16px;
 }
+
 // SLIDE TWO
 
 .slide-two {
@@ -372,6 +395,7 @@ input {
 .bi-calendar4-week {
   @include bootstrapicons;
 }
+
 // DATE RANGE PICKER CSS
 
 .daterangepicker {
@@ -407,6 +431,7 @@ input {
   height: 25px;
   padding-top: 2px;
 }
+
 // SLIDE THREE
 
 .slide-three {
@@ -425,6 +450,7 @@ input {
   margin: 9px auto 0;
   padding-top: 12px;
 }
+
 // FIND BUTTON
 
 #find-button {
@@ -439,6 +465,7 @@ input {
   margin-left: 215px;
   margin-top: 8px;
 }
+
 // SLIDE FOUR
 
 .slide-four {
@@ -448,19 +475,20 @@ input {
 .bi-geo-alt-fill {
   @include bootstrapicons;
 }
+
 // MAP BOX---------------------------------------------------------
 .button {
-    color: #fff;
-    background-color: #555;
-    padding: 5px;
-    margin-top: 1.5em;
-    position: absolute;
-    right: 3.5em;
-    top: 1em;
-    border-radius: 0.5em;
-    border-bottom: 2px #222 solid;
-    cursor: pointer;
-    width: 68px;
+  color: #fff;
+  background-color: #555;
+  padding: 5px;
+  margin-top: 1.5em;
+  position: absolute;
+  right: 3.5em;
+  top: 1em;
+  border-radius: 0.5em;
+  border-bottom: 2px #222 solid;
+  cursor: pointer;
+  width: 68px;
 }
 
 #map {
@@ -564,6 +592,7 @@ h1 {
   border: 2px solid white;
   margin-top: -6px;
 }
+
 // BUTTONS SLIDE FOUR
 
 .buttoncontainer-slide4 {
@@ -592,6 +621,7 @@ h1 {
   font-weight: 600;
   height: 40px;
 }
+
 // SLIDE FIVE
 
 .slide-five {
@@ -654,6 +684,7 @@ h1 {
   margin-left: 10px;
   margin-top: 15px;
 }
+
 //SWIPER ENDS
 
 #book-button {
@@ -668,6 +699,7 @@ h1 {
   margin-left: 218px;
   margin-top: -25px;
 }
+
 // MODAL
 
 #bookingconfirmed-modal {
@@ -679,9 +711,9 @@ h1 {
   z-index: 99;
   margin-left: 15px;
   border-radius: 20px;
-  box-shadow: 0 1px 6px 5px rgba(64,156,33,0.7);
-  -webkit-box-shadow: 0 1px 6px 5px rgba(64,156,33,0.7);
-  -moz-box-shadow: 0 1px 6px 5px rgba(64,156,33,0.7);
+  box-shadow: 0 1px 6px 5px rgba(64, 156, 33, 0.7);
+  -webkit-box-shadow: 0 1px 6px 5px rgba(64, 156, 33, 0.7);
+  -moz-box-shadow: 0 1px 6px 5px rgba(64, 156, 33, 0.7);
   background-size: cover;
   // opacity: 90;
   opacity: 0;
@@ -758,9 +790,9 @@ h1 {
   z-index: 99;
   margin-left: 15px;
   border-radius: 20px;
-  box-shadow: 0 1px 6px 5px rgba(64,156,33,0.7);
-  -webkit-box-shadow: 0 1px 6px 5px rgba(64,156,33,0.7);
-  -moz-box-shadow: 0 1px 6px 5px rgba(64,156,33,0.7);
+  box-shadow: 0 1px 6px 5px rgba(64, 156, 33, 0.7);
+  -webkit-box-shadow: 0 1px 6px 5px rgba(64, 156, 33, 0.7);
+  -moz-box-shadow: 0 1px 6px 5px rgba(64, 156, 33, 0.7);
   background-size: cover;
   opacity: 0;
   visibility: hidden;
@@ -835,6 +867,7 @@ h1 {
     padding-top: 6px;
   }
 }
+
 // FOOTER SECTION ENDS
 
 @import 'modules/mobilemedium';
